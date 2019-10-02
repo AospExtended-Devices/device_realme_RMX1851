@@ -7,10 +7,10 @@
 $(call inherit-product, device/realme/RMX1851/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX1851
+PRODUCT_NAME := aosp_RMX1851
 PRODUCT_DEVICE := RMX1851
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := RMX1851
@@ -24,3 +24,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="RMX1851"
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
+
+TARGET_USE_JELLY := true
+
+EXTENDED_BUILD_TYPE := OFFICIAL
