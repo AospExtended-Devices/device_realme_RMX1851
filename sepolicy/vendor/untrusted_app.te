@@ -1,0 +1,2 @@
+get_prop(untrusted_app, vendor_radio_prop)
+allow untrusted_app bt_firmware_file:dir { getattr };
