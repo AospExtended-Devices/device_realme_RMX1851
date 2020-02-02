@@ -166,7 +166,6 @@ VENDOR_SECURITY_PATCH := 2019-12-05
 # Sepolicy
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-SELINUX_IGNORE_NEVERALLOWS := true
 
 # System-as-root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
